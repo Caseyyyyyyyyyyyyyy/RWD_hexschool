@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+/* *, *::before, *::after {
+  outline: 1px solid blue;
+}  */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1920px;
+  font-family: "Noto Sans TC";
+}
+
+/* header */
+.header>nav {
+  margin: 0 auto;
+  padding: 32px 0;
+  border-bottom: 1px solid #F1F1F1;
+  position: relative;
+  background-color: #FFFFFF;
+  display: flex;
+  gap: 568px;
+}
+
+.close {
+  display: none;
+}
+
+nav>a>img {
+  width: 90px;
+  height: 40px;
+  margin-left: 312px;
+}
+
+.navbar-list {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-btn {
+  display: none;
+}
+
+.navbar-list>li>a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+  padding: 4px 8px;
+}
+
+/* banner */
+.banner {
+  padding: 80px 0;
+  background-color: #FAFAFA;
+}
+
+.slogan {
+  width: 670px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.slogan>img {
+  width: 72px;
+  height: 72px;
+}
+
+.slogan-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 528px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #1E1E1E;
+  text-align: center;
+  align-self: center;
+}
+
+.underline {
+  position: relative;
+  z-index: 1;
+}
+
+.underline-1::after {
+  position: absolute;
+  content: "";
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true");
+  width: 148px;
+  height: 8px;
+  left: -11px;
+  bottom: -2px;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+
+.underline-2::after {
+  position: absolute;
+  content: "";
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true");
+  width: 148px;
+  height: 8px;
+  left: -9px;
+  bottom: -2px;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.quote-right {
+  align-self: flex-end;
+}
+
+.experience {
+  margin: 0 auto;
+  width: 636px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience-2b, .experience-2c {
+  width: 298px;
+  text-align: center;
+}
+
+.experience-2b>h6, .experience-2c>h6 {
+  color: #5B5B5B;
+  position: relative; 
+  height: 28px;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+
+.experience-2b>h6::after, .experience-2c>h6::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 2px;
+  background-color: #C1C1C1;
+  left: 14px;
+  bottom: 0;
+}
+
+.experience-2b>p, .experience-2c>p {
+  color: #3B3B3B;
+  margin-top: 8px;
+}
+
+/* worksList */
+.works {
+  padding: 120px 0;
+}
+
+.works-list {
+  margin: 0 auto;
+  width: 1296px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.works-list-item {
+  width: 636px;
+}
+
+.item-following {
+  margin-top: 80px;
+}
+
+.works-list-item>img {
+  margin-bottom: 16px;
+  height: 400px;
+  border-radius: 8px;
+  border: 1px solid #F1F1F1;
+}
+
+.works-list-item-description {
+  padding: 0 16px;
+  border: 0 0 1px 0;
+}
+
+.works-list-item-description-content {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.works-list-item-description-content>h2 {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33.6px;
+  color: #3B3B3B;
+  margin-bottom: 8px;
+}
+
+.works-list-item-description-content>p {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 24px;
+  color: #919191;
+}
+
+.works-list-item-description-tags {
+  display: inline-flex;
+}
+
+.works-list-item-description-tags-center {
+  margin: 0 16px;
+}
+
+.works-list-item-description-tags>li>a {
+  display: block;
+  padding: 4px 12px;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #3B3B3B;
+  text-decoration: none;
+}
+
+.works-list-item-description-tags>li>a:hover {
+  background-color: gray;
+  color: white;
+}
+
+.works-pageIndex {
+  display: flex;
+  justify-content: space-between;
+  width: 152px;
+  margin: 72px auto 0 auto;
+}
+
+.works-pageIndex>li>a {
+  display: inline-block;
+  width: 40px;
+  border-radius: 4px;
+  padding: 2px 13px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #3B3B3B;
+  text-decoration: none;
+  text-align: center;
+}
+
+.works-pageIndex>li>.currentPage {
+  background-color: #1E1E1E;
+  color: #FFF;
+}
+
+/* 作品項目模態窗口 */
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+.modal-content {
+  width: 1076px;
+  margin: 15% auto;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+.modal-content-header {
+  height: 64px;
+  padding: 32px 40px 0 40px;
+}
+
+.close-button {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+}
+
+.close-button:hover,
+.close-button:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item-details-content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.item-details-content-description-title {
+  width: 240px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-details-content-description-title>h2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33.6px;
+  color: #3B3B3B;
+}
+
+.item-details-content-description-title>p {
+  font-weight: 400;
+  line-height: 24px;
+  color: #919191;
+}
+
+.item-details-content-description-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 56px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.item-details-content-description-text-left {
+  padding: 0 72px 0 0; 
+  width: 604px;
+}
+
+.item-details-content-description-text-left>p {
+  color: #1E1E1E;
+}
+
+.item-details-content-description-text-right {
+  border-left: 1px solid #C1C1C1;
+  padding: 0 0 0 23px;
+  color: #5B5B5B;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-details-content-images {
+  padding: 80px 0;
+  background-color: #FAFAFA;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+  align-items: center;
+  
+}
+
+.item-details-content-images>div {
+  width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item-details-content-images>div>img {
+  border-radius: 20px;
+}
+
+.item-details-content-images>div>div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.item-details-content-images>div>div>h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: #1E1E1E;
+}
+
+.item-details-content-images>div>div>p {
+  font-weight: 400;
+  line-height: 24px;
+  color: #5B5B5B;
+}
+
+
+
+
+
+
+
+/* footer */
+footer {
+  height: 424px;
+  padding: 0 312px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+}
+
+.remind {
+  margin: 119px 0;
+  width: 686px;
+}
+
+.remind>img {
+  width: 120px;
+  height: 54px;
+}
+
+.remind-text {
+  width: 300px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #3B3B3B;
+  margin: 24px 0;
+}
+
+.email {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #919191;
+}
+
+.contact {
+  width: 306px;
+  margin: 80px 0;
+}
+
+.contact>li {
+  height: 72px;
+  border-radius: 8px;
+  padding: 8px 24px;
+  border: 1px solid #C1C1C1;
+  display: flex;
+  align-items: center;
+}
+
+.contact>.form {
+  background-color: #000;
+}
+
+.contact>.ig {
+  margin: 24px 0;
+}
+
+.contact>li>a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 21px 0;
+}
+
+.contact>.form>a {
+  font-weight: 700;
+  color: #FFF;
+}
+.contact>.ig>a, .contact>.fb>a {
+  font-weight: 400;
+  color: #3B3B3B;
+}
+
+.contact>li>img {
+  width: 56px;
+  height: 56px;
+  margin-right: 8px;
+}
+
+
+
+
+@media (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
+
+  /* header */
+  .header>nav {
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+  }
+  
+  nav>a>img {
+    width: 74px;
+    height: 33px;
+    margin-left: 0;
+  }
+  
+  .navbar-btn {
+    display: inline;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    span {
+      font-size: 40px;
+    }
+  }
+  
+  .navbar-list {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    left: 50%;
+    top: 200px;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  /* banner */
+  .banner {
+    padding: 40px 24px 80px 24px;
+  }
+  
+  .slogan {
+    width: 300px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .slogan>img {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .slogan-text {
+    width: 300px;
+    font-size: 20px;
+    line-height: 30px;
+    gap: 8px;
+  }
+
+  .slogan-text-2 {
+    margin: 0 auto;
+    width: 260px;
+  }  
+
+  .underline-1::after {
+    width: 108px;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+  }
+  
+  
+  .underline-2::after {
+    width: 108px;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .quote-right {
+    display: none;
+  }
+  
+  .experience {
+    margin: 0 auto;
+    width: 235px;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .experience-2b, .experience-2c {
+    width: 235px;
+  }
+  
+  /* worksList */
+  .works {
+    padding: 80px 0;
+  }
+
+  .works-list {
+    width: 351px;
+    justify-content: flex-start;
+    gap: 48px;
+  }
+
+  .works-list-item {
+    width: 351px;
+  }
+
+  .item-following {
+    margin-top: 0;
+  }
+
+  .works-list-item>img {
+    width: 351px;
+    height: 224px;
+    border-radius: 4px; 
+    border: 0.55px solid #F1F1F1;
+  }
+
+  .works-list-item-description-content {
+    margin-bottom: 16px;
+  }
+
+  .works-list-item-description-content>h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .works-list-item-description-tags-center {
+    margin: 0 8px;
+  }
+
+  .works-pageIndex {
+    margin: 48px auto 0 auto;
+  }
+
+  /* 作品項目模態窗口 */
+  .modal-content {
+    width: 351px;
+  }
+
+  .modal-content-header {
+    padding: 32px 32px 0 32px;
+  }
+
+  .item-details-content-description {
+    gap: 24px;
+    padding: 24px 0;
+  }
+
+  .item-details-content-description-title>h2 {
+    line-height: 42px;
+  }
+
+  .item-details-content-description-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 32px;
+  }
+
+  .item-details-content-description-text-left {
+    padding: 0; 
+    width: 287px;
+  }
+
+  .item-details-content-description-text-right {
+    width: 287px;
+    border-left: 0;
+    border-top: 1px solid #C1C1C1;
+    padding: 24px 0 0 0;
+    gap: 24px;
+  }
+
+  .semicolon {
+    display: none;
+  }
+
+  .item-details-content-images {
+    padding: 40px 0;
+  }
+
+  .item-details-content-images>div {
+    width: 319px;
+    gap: 16px;
+  }
+
+  .item-details-content-images>div>img {
+    border-radius: 8px;
+  }
+
+  .item-details-content-images>div>div {
+    gap: 8px;
+  }
+
+  .item-details-content-images>div>div>h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .item-details-content-images>div>div>p {
+    width: 319px;
+    text-align: left;
+  }
+
+  /* footer */
+  footer {
+    height: 538px;
+    border-top: 1px solid #FAFAFA;
+    padding: 40px 12px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 40px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true);
+  }
+
+  .remind {
+    margin: 0;
+    width: 351px;
+    text-align: center;
+  }
+
+  .remind-text {
+    width: 240px;
+    margin: 24px auto;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+  }
+
+  .email {
+    font-size: 16px;
+  }
+
+  .contact {
+    width: 306px;
+    margin: 0 auto;
+  }
+
+  .contact>li {
+    height: 64px;
+    padding: 4px 24px;
+  }
+}
